@@ -271,6 +271,7 @@ namespace Calculadora
             this.butraizcuadrado.TabIndex = 34;
             this.butraizcuadrado.Text = "²√x";
             this.butraizcuadrado.UseVisualStyleBackColor = false;
+            this.butraizcuadrado.Click += new System.EventHandler(this.butraizcuadrado_Click);
             // 
             // butcuadrado
             // 
@@ -282,6 +283,7 @@ namespace Calculadora
             this.butcuadrado.TabIndex = 33;
             this.butcuadrado.Text = "x²";
             this.butcuadrado.UseVisualStyleBackColor = false;
+            this.butcuadrado.Click += new System.EventHandler(this.butcuadrado_Click);
             // 
             // butdividido1
             // 
@@ -293,6 +295,7 @@ namespace Calculadora
             this.butdividido1.TabIndex = 32;
             this.butdividido1.Text = "1/x";
             this.butdividido1.UseVisualStyleBackColor = false;
+            this.butdividido1.Click += new System.EventHandler(this.butdividido1_Click);
             // 
             // butborrar
             // 

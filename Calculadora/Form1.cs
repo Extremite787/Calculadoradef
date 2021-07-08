@@ -111,7 +111,7 @@ namespace Calculadora
             Pantallaant.Text = Pantallapri.Text + "÷";
             Pantallapri.Clear();
         }
-
+        //aun no se puede evitar poner mas de un coma
         private void butcoma_Click(object sender, EventArgs e)
         {
             operador = ",";
@@ -161,7 +161,7 @@ namespace Calculadora
         {
             Pantallapri.Clear();
         }
-
+        //deve dar un numero 0 cuamdo la pantalla esta vacia
         private void butborrar_Click(object sender, EventArgs e)
         {
             if (Pantallapri.Text.Length == 1)
@@ -178,6 +178,33 @@ namespace Calculadora
         {
             primero = Convert.ToInt32(Pantallapri.Text);
             primero *= -1;
+            Pantallapri.Text = primero.ToString();
+        }
+
+        private void butcuadrado_Click(object sender, EventArgs e)
+        {
+            operador = "²";
+            primero = Convert.ToInt32(Pantallapri.Text);
+            Pantallaant.Text = Pantallapri.Text + "²";
+            primero = primero * primero;
+            Pantallapri.Text = primero.ToString();
+        }
+
+        private void butdividido1_Click(object sender, EventArgs e)
+        {
+            operador = "1/";
+            primero = Convert.ToInt32(Pantallapri.Text);
+            Pantallaant.Text = "1/" + Pantallapri.Text;
+            primero = 1/primero;
+            Pantallapri.Text = primero.ToString();
+        }
+        //no hay raiz
+        private void butraizcuadrado_Click(object sender, EventArgs e)
+        {
+            operador = "²√";
+            primero = Convert.ToInt32(Pantallapri.Text);
+            Pantallaant.Text = "²√" + Pantallapri.Text;
+            primero = primero * 0.5;
             Pantallapri.Text = primero.ToString();
         }
     }
