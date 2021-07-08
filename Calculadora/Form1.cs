@@ -20,6 +20,11 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        Classuma for1 = new Classuma();
+        Clasresta for2 = new Clasresta();
+        Clasmultiplicacion for3 = new Clasmultiplicacion();
+        Clasdivicion for4 = new Clasdivicion();
         private void butnumero0_Click(object sender, EventArgs e)
         {
             Pantallapri.Text = Pantallapri.Text+"0";
@@ -119,7 +124,29 @@ namespace Calculadora
 
         private void butigual_Click(object sender, EventArgs e)
         {
-            
+            segundo = double.Parse(Pantallapri.Text);
+            double Sum, Res, Mul, Div;
+
+            switch (operador)
+            {
+                case "+":
+                    Sum = for1.Suma((primero), (segundo));
+                    Pantallapri.Text = Sum.ToString();
+                    break;
+                case "-":
+                    Res = for2.Restar((primero), (segundo));
+                    Pantallapri.Text = Res.ToString();
+                    break;
+                case "x":
+                    Mul = for3.Multiplicar((primero), (segundo));
+                    Pantallapri.Text = Mul.ToString();
+                    break;
+                case "÷":
+                    Div = for4.Divicion((primero), (segundo));
+                    Pantallapri.Text = Div.ToString();
+                    break;
+
+            }
         }
     }
 }
