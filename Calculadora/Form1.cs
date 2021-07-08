@@ -84,6 +84,7 @@ namespace Calculadora
         {
             operador = "+";
             primero = double.Parse(Pantallapri.Text);
+            Pantallaant.Text = Pantallapri.Text + "+";
             Pantallapri.Clear();
         }
 
@@ -91,6 +92,7 @@ namespace Calculadora
         {
             operador = "-";
             primero = double.Parse(Pantallapri.Text);
+            Pantallaant.Text = Pantallapri.Text + "-";
             Pantallapri.Clear();
         }
 
@@ -98,6 +100,7 @@ namespace Calculadora
         {
             operador = "x";
             primero = double.Parse(Pantallapri.Text);
+            Pantallaant.Text = Pantallapri.Text + "x";
             Pantallapri.Clear();
         }
 
@@ -105,6 +108,7 @@ namespace Calculadora
         {
             operador = "÷";
             primero = double.Parse(Pantallapri.Text);
+            Pantallaant.Text = Pantallapri.Text + "÷";
             Pantallapri.Clear();
         }
 
@@ -116,28 +120,59 @@ namespace Calculadora
 
         private void butigual_Click(object sender, EventArgs e)
         {
-            segundo = double.Parse(Pantallapri.Text);
-            double Sum, Res, Mul, Div;
 
-            switch (operador)
+                segundo = double.Parse(Pantallapri.Text);
+                double Sum, Res, Mul, Div;
+
+                switch (operador)
+                {
+                    case "+":
+                        Sum = for1.Suma((primero), (segundo));
+                        Pantallapri.Text = Sum.ToString();
+                        Pantallaant.Clear();
+                        break;
+                    case "-":
+                        Res = for2.Restar((primero), (segundo));
+                        Pantallapri.Text = Res.ToString();
+                        Pantallaant.Clear();
+                        break;
+                    case "x":
+                        Mul = for3.Multiplicar((primero), (segundo));
+                        Pantallapri.Text = Mul.ToString();
+                        Pantallaant.Clear();
+                        break;
+                    case "÷":
+                        Div = for4.Divicion((primero), (segundo));
+                        Pantallapri.Text = Div.ToString();
+                        Pantallaant.Clear();
+                        break;
+                }
+            
+        }
+
+        private void butC_Click(object sender, EventArgs e)
+        {
+            Pantallapri.Clear();
+            Pantallaant.Clear();
+        }
+
+        private void butCE_Click(object sender, EventArgs e)
+        {
+            Pantallapri.Text = "";
+            Pantallapri.Clear();
+        }
+
+        private void butborrar_Click(object sender, EventArgs e)
+        {
+            if (Pantallapri.TextLength == 1)
             {
-                case "+":
-                    Sum = for1.Suma((primero), (segundo));
-                    Pantallapri.Text = Sum.ToString();
-                    break;
-                case "-":
-                    Res = for2.Restar((primero), (segundo));
-                    Pantallapri.Text = Res.ToString();
-                    break;
-                case "x":
-                    Mul = for3.Multiplicar((primero), (segundo));
-                    Pantallapri.Text = Mul.ToString();
-                    break;
-                case "÷":
-                    Div = for4.Divicion((primero), (segundo));
-                    Pantallapri.Text = Div.ToString();
-                    break;
-
+                Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1, 1);
+                
+            }
+            if (Pantallapri.Text.Length == 1)
+            {
+                Pantallapri.Text = "0";
+                
             }
         }
     }

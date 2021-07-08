@@ -50,8 +50,8 @@ namespace Calculadora
             this.butcuadrado = new System.Windows.Forms.Button();
             this.butdividido1 = new System.Windows.Forms.Button();
             this.butborrar = new System.Windows.Forms.Button();
-            this.butborrartodo = new System.Windows.Forms.Button();
-            this.butborrarultimo = new System.Windows.Forms.Button();
+            this.butC = new System.Windows.Forms.Button();
+            this.butCE = new System.Windows.Forms.Button();
             this.butporciento = new System.Windows.Forms.Button();
             this.Pantallapri = new System.Windows.Forms.TextBox();
             this.Pantallaant = new System.Windows.Forms.TextBox();
@@ -303,28 +303,31 @@ namespace Calculadora
             this.butborrar.TabIndex = 31;
             this.butborrar.Text = "<<";
             this.butborrar.UseVisualStyleBackColor = false;
+            this.butborrar.Click += new System.EventHandler(this.butborrar_Click);
             // 
-            // butborrartodo
+            // butC
             // 
-            this.butborrartodo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.butborrartodo.ForeColor = System.Drawing.SystemColors.Control;
-            this.butborrartodo.Location = new System.Drawing.Point(152, 80);
-            this.butborrartodo.Name = "butborrartodo";
-            this.butborrartodo.Size = new System.Drawing.Size(65, 47);
-            this.butborrartodo.TabIndex = 30;
-            this.butborrartodo.Text = "C";
-            this.butborrartodo.UseVisualStyleBackColor = false;
+            this.butC.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.butC.ForeColor = System.Drawing.SystemColors.Control;
+            this.butC.Location = new System.Drawing.Point(152, 80);
+            this.butC.Name = "butC";
+            this.butC.Size = new System.Drawing.Size(65, 47);
+            this.butC.TabIndex = 30;
+            this.butC.Text = "C";
+            this.butC.UseVisualStyleBackColor = false;
+            this.butC.Click += new System.EventHandler(this.butC_Click);
             // 
-            // butborrarultimo
+            // butCE
             // 
-            this.butborrarultimo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.butborrarultimo.ForeColor = System.Drawing.SystemColors.Control;
-            this.butborrarultimo.Location = new System.Drawing.Point(84, 80);
-            this.butborrarultimo.Name = "butborrarultimo";
-            this.butborrarultimo.Size = new System.Drawing.Size(65, 47);
-            this.butborrarultimo.TabIndex = 29;
-            this.butborrarultimo.Text = "CE";
-            this.butborrarultimo.UseVisualStyleBackColor = false;
+            this.butCE.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.butCE.ForeColor = System.Drawing.SystemColors.Control;
+            this.butCE.Location = new System.Drawing.Point(84, 80);
+            this.butCE.Name = "butCE";
+            this.butCE.Size = new System.Drawing.Size(65, 47);
+            this.butCE.TabIndex = 29;
+            this.butCE.Text = "CE";
+            this.butCE.UseVisualStyleBackColor = false;
+            this.butCE.Click += new System.EventHandler(this.butCE_Click);
             // 
             // butporciento
             // 
@@ -353,11 +356,14 @@ namespace Calculadora
             // Pantallaant
             // 
             this.Pantallaant.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.Pantallaant.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Pantallaant.ForeColor = System.Drawing.SystemColors.Window;
             this.Pantallaant.Location = new System.Drawing.Point(13, 10);
             this.Pantallaant.Multiline = true;
             this.Pantallaant.Name = "Pantallaant";
             this.Pantallaant.Size = new System.Drawing.Size(275, 29);
             this.Pantallaant.TabIndex = 26;
+            this.Pantallaant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -386,8 +392,8 @@ namespace Calculadora
             this.Controls.Add(this.butcuadrado);
             this.Controls.Add(this.butdividido1);
             this.Controls.Add(this.butborrar);
-            this.Controls.Add(this.butborrartodo);
-            this.Controls.Add(this.butborrarultimo);
+            this.Controls.Add(this.butC);
+            this.Controls.Add(this.butCE);
             this.Controls.Add(this.butporciento);
             this.Controls.Add(this.Pantallapri);
             this.Controls.Add(this.Pantallaant);
@@ -421,8 +427,8 @@ namespace Calculadora
         private System.Windows.Forms.Button butcuadrado;
         private System.Windows.Forms.Button butdividido1;
         private System.Windows.Forms.Button butborrar;
-        private System.Windows.Forms.Button butborrartodo;
-        private System.Windows.Forms.Button butborrarultimo;
+        private System.Windows.Forms.Button butC;
+        private System.Windows.Forms.Button butCE;
         private System.Windows.Forms.Button butporciento;
         private System.Windows.Forms.TextBox Pantallapri;
         private System.Windows.Forms.TextBox Pantallaant;
