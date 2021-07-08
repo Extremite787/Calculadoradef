@@ -103,6 +103,7 @@ namespace Calculadora
             this.butnegativo.TabIndex = 48;
             this.butnegativo.Text = "+/-";
             this.butnegativo.UseVisualStyleBackColor = false;
+            this.butnegativo.Click += new System.EventHandler(this.butnegativo_Click);
             // 
             // butsuma
             // 

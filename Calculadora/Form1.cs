@@ -130,22 +130,22 @@ namespace Calculadora
                     case "+":
                         Sum = for1.Suma((primero), (segundo));
                         Pantallapri.Text = Sum.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo;
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
                         break;
                     case "-":
                         Res = for2.Restar((primero), (segundo));
                         Pantallapri.Text = Res.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo;
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
                     case "x":
                         Mul = for3.Multiplicar((primero), (segundo));
                         Pantallapri.Text = Mul.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo;
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
                     case "÷":
                         Div = for4.Divicion((primero), (segundo));
                         Pantallapri.Text = Div.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo;
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
                 }
             
@@ -172,6 +172,13 @@ namespace Calculadora
             {
                 Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1);
             }
+        }
+
+        private void butnegativo_Click(object sender, EventArgs e)
+        {
+            primero = Convert.ToInt32(Pantallapri.Text);
+            primero *= -1;
+            Pantallapri.Text = primero.ToString();
         }
     }
 }
