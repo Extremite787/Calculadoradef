@@ -129,23 +129,23 @@ namespace Calculadora
                     case "+":
                         Sum = for1.Suma((primero), (segundo));
                         Pantallapri.Text = Sum.ToString();
-                        Pantallaant.Clear();
+                        Pantallaant.Text = Pantallaant.Text + segundo;
                         break;
                     case "-":
                         Res = for2.Restar((primero), (segundo));
                         Pantallapri.Text = Res.ToString();
-                        Pantallaant.Clear();
-                        break;
+                        Pantallaant.Text = Pantallaant.Text + segundo;
+                    break;
                     case "x":
                         Mul = for3.Multiplicar((primero), (segundo));
                         Pantallapri.Text = Mul.ToString();
-                        Pantallaant.Clear();
-                        break;
+                        Pantallaant.Text = Pantallaant.Text + segundo;
+                    break;
                     case "÷":
                         Div = for4.Divicion((primero), (segundo));
                         Pantallapri.Text = Div.ToString();
-                        Pantallaant.Clear();
-                        break;
+                        Pantallaant.Text = Pantallaant.Text + segundo;
+                    break;
                 }
             
         }
@@ -158,21 +158,18 @@ namespace Calculadora
 
         private void butCE_Click(object sender, EventArgs e)
         {
-            Pantallapri.Text = "";
             Pantallapri.Clear();
         }
 
         private void butborrar_Click(object sender, EventArgs e)
         {
-            if (Pantallapri.TextLength == 1)
-            {
-                Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1, 1);
-                
-            }
             if (Pantallapri.Text.Length == 1)
             {
-                Pantallapri.Text = "0";
-                
+                Pantallapri.Text = "";
+            }
+            else
+            {
+                Pantallapri.Text = Pantallapri.Text.Remove(0, Pantallapri.Text.Length - 1);
             }
         }
     }
