@@ -82,17 +82,9 @@ namespace Calculadora
 
         private void butsuma_Click(object sender, EventArgs e)
         {
-            Numero = Numero + "+";
-
-            string[] num = Numero.Split('+');
-            int sumar = 0;
-            for (int a=0;a<num.Length;a++)
-            {
-                if(num[a] !="")
-                sumar = sumar + Convert.ToInt32(num[a]);
-            }
-            Pantallapri.Text = Numero;
-            Pantallaant.Text = sumar.ToString();
+            operador = "+";
+            primero = double.Parse(Pantallapri.Text);
+            Pantallapri.Clear();
         }
 
         private void butresta_Click(object sender, EventArgs e)
