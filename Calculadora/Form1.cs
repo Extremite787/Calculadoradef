@@ -114,8 +114,9 @@ namespace Calculadora
 
         private void butcoma_Click(object sender, EventArgs e)
         {
+            operador = ",";
+            primero = double.Parse(Pantallapri.Text);
             Pantallapri.Text = Pantallapri.Text + ",";
-            butcoma.Enabled = false;
         }
 
         private void butigual_Click(object sender, EventArgs e)
@@ -169,7 +170,7 @@ namespace Calculadora
             }
             else
             {
-                Pantallapri.Text = Pantallapri.Text.Remove(0, Pantallapri.Text.Length - 1);
+                Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1);
             }
         }
     }
