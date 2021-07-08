@@ -14,7 +14,7 @@ namespace Calculadora
     {
         double primero;
         double segundo;
-        string operador;
+        string operador = string.Empty;
         string Numero = string.Empty;
         public Form1()
         {
