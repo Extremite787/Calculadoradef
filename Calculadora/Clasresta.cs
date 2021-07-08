@@ -11,6 +11,7 @@ namespace Calculadora
             double R;
             R = num1 + num2;
             return R;
+
         }
     }
 }
