@@ -28,7 +28,7 @@ namespace Calculadora
         Clasdivicion for4 = new Clasdivicion();
         private void butnumero0_Click(object sender, EventArgs e)
         {
-            Pantallapri.Text = Pantallapri.Text+"0";
+            Pantallapri.Text = Pantallapri.Text + "0";
         }
         private void butnumero1_Click(object sender, EventArgs e)
         {

@@ -355,12 +355,13 @@ namespace Calculadora
             this.Pantallapri.Name = "Pantallapri";
             this.Pantallapri.Size = new System.Drawing.Size(275, 29);
             this.Pantallapri.TabIndex = 27;
+            this.Pantallapri.Text = "0";
             this.Pantallapri.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Pantallaant
             // 
             this.Pantallaant.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Pantallaant.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Pantallaant.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Pantallaant.ForeColor = System.Drawing.SystemColors.Window;
             this.Pantallaant.Location = new System.Drawing.Point(13, 10);
             this.Pantallaant.Multiline = true;
