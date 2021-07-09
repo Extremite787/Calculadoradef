@@ -356,7 +356,6 @@ namespace Calculadora
             this.Pantallapri.Size = new System.Drawing.Size(275, 29);
             this.Pantallapri.TabIndex = 27;
             this.Pantallapri.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Pantallapri.TextChanged += new System.EventHandler(this.Pantallapri_TextChanged);
             // 
             // Pantallaant
             // 

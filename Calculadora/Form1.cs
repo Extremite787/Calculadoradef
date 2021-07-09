@@ -21,6 +21,7 @@ namespace Calculadora
             InitializeComponent();
         }
 
+        Clasporcentaje per = new Clasporcentaje();
         Classuma for1 = new Classuma();
         Clasresta for2 = new Clasresta();
         Clasmultiplicacion for3 = new Clasmultiplicacion();
@@ -105,43 +106,45 @@ namespace Calculadora
             Pantallaant.Text = Pantallapri.Text + "÷";
             Pantallapri.Clear();
         }
-        //aun no se puede evitar poner mas de un coma
+
         private void butcoma_Click(object sender, EventArgs e)
         {
-            Pantallapri.Text = Pantallapri.Text + ",";
-            operador = ",";
-            butcoma.Enabled = false;
+            if (Pantallapri.Text.Contains("."))
+            {
+                return;
+            }
+            Pantallapri.Text += ".";
         }
 
         private void butigual_Click(object sender, EventArgs e)
         {
-            operador = "=";
+            
             segundo = double.Parse(Pantallapri.Text);
-                double Sum, Res, Mul, Div;
+            double Sum, Res, Mul, Div;
 
-                switch (operador)
-                {
-                    case "+":
-                        Sum = for1.Suma((primero), (segundo));
-                        Pantallapri.Text = Sum.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
-                        break;
-                    case "-":
-                        Res = for2.Restar((primero), (segundo));
-                        Pantallapri.Text = Res.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+            switch (operador)
+            {
+                case "+":
+                    Sum = for1.Suma((primero), (segundo));
+                    Pantallapri.Text = Sum.ToString();
+                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
-                    case "x":
-                        Mul = for3.Multiplicar((primero), (segundo));
-                        Pantallapri.Text = Mul.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                case "-":
+                    Res = for2.Restar((primero), (segundo));
+                    Pantallapri.Text = Res.ToString();
+                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
-                    case "÷":
-                        Div = for4.Divicion((primero), (segundo));
-                        Pantallapri.Text = Div.ToString();
-                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                case "x":
+                    Mul = for3.Multiplicar((primero), (segundo));
+                    Pantallapri.Text = Mul.ToString();
+                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
-                } 
+                case "÷":
+                    Div = for4.Divicion((primero), (segundo));
+                    Pantallapri.Text = Div.ToString();
+                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                    break;
+            }
         }
 
         private void butC_Click(object sender, EventArgs e)
@@ -154,14 +157,10 @@ namespace Calculadora
         {
             Pantallapri.Clear();
         }
-        //deve dar un numero 0 cuamdo la pantalla esta vacia
+
         private void butborrar_Click(object sender, EventArgs e)
         {
-            if (Pantallapri.Text.Length == 1)
-            {
-                Pantallapri.Text = "0";
-            }
-            else
+            if (Pantallapri.Text.Length > 0)
             {
                 Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1);
             }
@@ -188,32 +187,28 @@ namespace Calculadora
             operador = "1/";
             primero = Convert.ToInt32(Pantallapri.Text);
             Pantallaant.Text = "1/" + Pantallapri.Text;
-            primero = 1/primero;
+            primero = 1 / primero;
             Pantallapri.Text = primero.ToString();
         }
-        //no hay raiz
+
         private void butraizcuadrado_Click(object sender, EventArgs e)
         {
             operador = "²√";
             primero = Convert.ToInt32(Pantallapri.Text);
             Pantallaant.Text = "²√" + Pantallapri.Text;
-            
+
             double Resultado, num = primero;
-                Resultado = Math.Sqrt(num);
+            Resultado = Math.Sqrt(num);
             Pantallapri.Text = Resultado.ToString();
         }
 
         private void butporciento_Click(object sender, EventArgs e)
         {
-            operador = "%";
-            primero = Convert.ToInt32(Pantallapri.Text);
-            segundo = Convert.ToInt32(Pantallapri.Text);
-            Pantallaant.Text = primero + "%" + Pantallapri.Text;
-
-            double Resultado, num = segundo, porcentaje = 10;
-            Resultado = (num * porcentaje) / 100;
-
-            Pantallapri.Text = Resultado.ToString();
+            double Por;
+            Por = per.Porcentaje((primero), (segundo));
+            Pantallapri.Text = Por.ToString();
+            Pantallaant.Text = Pantallaant.Text + "%";
         }
     }
 }
+
