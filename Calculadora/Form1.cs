@@ -15,7 +15,6 @@ namespace Calculadora
         double primero;
         double segundo;
         string operador = string.Empty;
-        string Numero = string.Empty;
         public Form1()
         {
             InitializeComponent();
@@ -166,7 +165,7 @@ namespace Calculadora
         {
             if (Pantallapri.Text.Length == 1)
             {
-                Pantallapri.Text = "";
+                Pantallapri.Text = "0";
             }
             else
             {
@@ -204,8 +203,17 @@ namespace Calculadora
             operador = "²√";
             primero = Convert.ToInt32(Pantallapri.Text);
             Pantallaant.Text = "²√" + Pantallapri.Text;
-            primero = primero * 0.5;
-            Pantallapri.Text = primero.ToString();
+            
+            double Resultado, num = primero;
+                Resultado = Math.Sqrt(num);
+            Pantallapri.Text = Resultado.ToString();
+        }
+
+        private void butporciento_Click(object sender, EventArgs e)
+        {
+            operador = "²√";
+            primero = Convert.ToInt32(Pantallapri.Text);
+            Pantallaant.Text = "²√" + Pantallapri.Text;
         }
     }
 }

@@ -343,6 +343,7 @@ namespace Calculadora
             this.butporciento.TabIndex = 28;
             this.butporciento.Text = "%";
             this.butporciento.UseVisualStyleBackColor = false;
+            this.butporciento.Click += new System.EventHandler(this.butporciento_Click);
             // 
             // Pantallapri
             // 
