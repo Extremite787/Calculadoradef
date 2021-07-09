@@ -15,6 +15,7 @@ namespace Calculadora
         double primero;
         double segundo;
         string operador = string.Empty;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,12 +29,6 @@ namespace Calculadora
         {
             Pantallapri.Text = Pantallapri.Text+"0";
         }
-
-        private void Pantallapri_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void butnumero1_Click(object sender, EventArgs e)
         {
             Pantallapri.Text = Pantallapri.Text + "1";
@@ -113,15 +108,15 @@ namespace Calculadora
         //aun no se puede evitar poner mas de un coma
         private void butcoma_Click(object sender, EventArgs e)
         {
-            operador = ",";
-            primero = double.Parse(Pantallapri.Text);
             Pantallapri.Text = Pantallapri.Text + ",";
+            operador = ",";
+            butcoma.Enabled = false;
         }
 
         private void butigual_Click(object sender, EventArgs e)
         {
-
-                segundo = double.Parse(Pantallapri.Text);
+            operador = "=";
+            segundo = double.Parse(Pantallapri.Text);
                 double Sum, Res, Mul, Div;
 
                 switch (operador)
@@ -146,8 +141,7 @@ namespace Calculadora
                         Pantallapri.Text = Div.ToString();
                         Pantallaant.Text = Pantallaant.Text + segundo + "=";
                     break;
-                }
-            
+                } 
         }
 
         private void butC_Click(object sender, EventArgs e)
@@ -176,7 +170,7 @@ namespace Calculadora
         private void butnegativo_Click(object sender, EventArgs e)
         {
             primero = Convert.ToInt32(Pantallapri.Text);
-            primero *= -1;
+            primero = primero * -1;
             Pantallapri.Text = primero.ToString();
         }
 
@@ -211,9 +205,15 @@ namespace Calculadora
 
         private void butporciento_Click(object sender, EventArgs e)
         {
-            operador = "²√";
+            operador = "%";
             primero = Convert.ToInt32(Pantallapri.Text);
-            Pantallaant.Text = "²√" + Pantallapri.Text;
+            segundo = Convert.ToInt32(Pantallapri.Text);
+            Pantallaant.Text = primero + "%" + Pantallapri.Text;
+
+            double Resultado, num = segundo, porcentaje = 10;
+            Resultado = (num * porcentaje) / 100;
+
+            Pantallapri.Text = Resultado.ToString();
         }
     }
 }
