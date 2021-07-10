@@ -109,11 +109,11 @@ namespace Calculadora
 
         private void butcoma_Click(object sender, EventArgs e)
         {
-            if (Pantallapri.Text.Contains("."))
+            if (Pantallapri.Text.Contains(","))
             {
                 return;
             }
-            Pantallapri.Text += ".";
+            Pantallapri.Text += ",";
         }
 
         private void butigual_Click(object sender, EventArgs e)

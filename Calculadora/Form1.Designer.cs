@@ -374,7 +374,7 @@ namespace Calculadora
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(300, 402);
+            this.ClientSize = new System.Drawing.Size(299, 402);
             this.Controls.Add(this.butigual);
             this.Controls.Add(this.butcoma);
             this.Controls.Add(this.butnumero0);
