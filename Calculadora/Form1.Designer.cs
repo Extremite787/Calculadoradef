@@ -482,6 +482,7 @@ namespace Calculadora
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculadora";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
