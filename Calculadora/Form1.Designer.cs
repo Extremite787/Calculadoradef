@@ -62,7 +62,7 @@ namespace Calculadora
             // 
             this.butigual.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butigual.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butigual.ForeColor = System.Drawing.SystemColors.Control;
+            this.butigual.ForeColor = System.Drawing.Color.GhostWhite;
             this.butigual.Location = new System.Drawing.Point(223, 345);
             this.butigual.Name = "butigual";
             this.butigual.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
@@ -77,7 +77,7 @@ namespace Calculadora
             // 
             this.butcoma.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butcoma.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butcoma.ForeColor = System.Drawing.SystemColors.Control;
+            this.butcoma.ForeColor = System.Drawing.Color.Aqua;
             this.butcoma.Location = new System.Drawing.Point(152, 345);
             this.butcoma.Name = "butcoma";
             this.butcoma.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -92,7 +92,7 @@ namespace Calculadora
             // 
             this.butnumero0.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero0.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero0.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero0.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero0.Location = new System.Drawing.Point(84, 345);
             this.butnumero0.Name = "butnumero0";
             this.butnumero0.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -107,7 +107,7 @@ namespace Calculadora
             // 
             this.butnegativo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnegativo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnegativo.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnegativo.ForeColor = System.Drawing.Color.Aqua;
             this.butnegativo.Location = new System.Drawing.Point(12, 345);
             this.butnegativo.Name = "butnegativo";
             this.butnegativo.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
@@ -122,7 +122,7 @@ namespace Calculadora
             // 
             this.butsuma.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butsuma.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butsuma.ForeColor = System.Drawing.SystemColors.Control;
+            this.butsuma.ForeColor = System.Drawing.Color.GhostWhite;
             this.butsuma.Location = new System.Drawing.Point(223, 292);
             this.butsuma.Name = "butsuma";
             this.butsuma.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
@@ -137,7 +137,7 @@ namespace Calculadora
             // 
             this.butnumero3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero3.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero3.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero3.Location = new System.Drawing.Point(152, 292);
             this.butnumero3.Name = "butnumero3";
             this.butnumero3.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -152,7 +152,7 @@ namespace Calculadora
             // 
             this.butnumero2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero2.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero2.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero2.Location = new System.Drawing.Point(84, 292);
             this.butnumero2.Name = "butnumero2";
             this.butnumero2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -167,7 +167,7 @@ namespace Calculadora
             // 
             this.butnumero1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero1.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero1.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero1.Location = new System.Drawing.Point(13, 292);
             this.butnumero1.Name = "butnumero1";
             this.butnumero1.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -182,7 +182,7 @@ namespace Calculadora
             // 
             this.butresta.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butresta.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butresta.ForeColor = System.Drawing.SystemColors.Control;
+            this.butresta.ForeColor = System.Drawing.Color.GhostWhite;
             this.butresta.Location = new System.Drawing.Point(223, 239);
             this.butresta.Name = "butresta";
             this.butresta.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
@@ -197,7 +197,7 @@ namespace Calculadora
             // 
             this.butnumero6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero6.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero6.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero6.Location = new System.Drawing.Point(152, 239);
             this.butnumero6.Name = "butnumero6";
             this.butnumero6.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -212,7 +212,7 @@ namespace Calculadora
             // 
             this.butnumero5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero5.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero5.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero5.Location = new System.Drawing.Point(84, 239);
             this.butnumero5.Name = "butnumero5";
             this.butnumero5.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -227,7 +227,7 @@ namespace Calculadora
             // 
             this.butnumero4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero4.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero4.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero4.Location = new System.Drawing.Point(13, 239);
             this.butnumero4.Name = "butnumero4";
             this.butnumero4.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -242,7 +242,7 @@ namespace Calculadora
             // 
             this.butmultiplicar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butmultiplicar.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.butmultiplicar.ForeColor = System.Drawing.SystemColors.Control;
+            this.butmultiplicar.ForeColor = System.Drawing.Color.GhostWhite;
             this.butmultiplicar.Location = new System.Drawing.Point(223, 186);
             this.butmultiplicar.Name = "butmultiplicar";
             this.butmultiplicar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
@@ -257,7 +257,7 @@ namespace Calculadora
             // 
             this.butnumero9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero9.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero9.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero9.Location = new System.Drawing.Point(152, 186);
             this.butnumero9.Name = "butnumero9";
             this.butnumero9.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -272,7 +272,7 @@ namespace Calculadora
             // 
             this.butnumero8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero8.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero8.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero8.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero8.Location = new System.Drawing.Point(84, 186);
             this.butnumero8.Name = "butnumero8";
             this.butnumero8.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -287,7 +287,7 @@ namespace Calculadora
             // 
             this.butnumero7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butnumero7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butnumero7.ForeColor = System.Drawing.SystemColors.Control;
+            this.butnumero7.ForeColor = System.Drawing.Color.Yellow;
             this.butnumero7.Location = new System.Drawing.Point(13, 186);
             this.butnumero7.Name = "butnumero7";
             this.butnumero7.Padding = new System.Windows.Forms.Padding(2, 0, 0, 5);
@@ -302,7 +302,7 @@ namespace Calculadora
             // 
             this.butdividir.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butdividir.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butdividir.ForeColor = System.Drawing.SystemColors.Control;
+            this.butdividir.ForeColor = System.Drawing.Color.GhostWhite;
             this.butdividir.Location = new System.Drawing.Point(223, 133);
             this.butdividir.Name = "butdividir";
             this.butdividir.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
@@ -317,7 +317,7 @@ namespace Calculadora
             // 
             this.butraizcuadrado.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butraizcuadrado.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butraizcuadrado.ForeColor = System.Drawing.SystemColors.Control;
+            this.butraizcuadrado.ForeColor = System.Drawing.Color.Aqua;
             this.butraizcuadrado.Location = new System.Drawing.Point(152, 133);
             this.butraizcuadrado.Name = "butraizcuadrado";
             this.butraizcuadrado.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -332,7 +332,7 @@ namespace Calculadora
             // 
             this.butcuadrado.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butcuadrado.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butcuadrado.ForeColor = System.Drawing.SystemColors.Control;
+            this.butcuadrado.ForeColor = System.Drawing.Color.Aqua;
             this.butcuadrado.Location = new System.Drawing.Point(84, 133);
             this.butcuadrado.Name = "butcuadrado";
             this.butcuadrado.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -347,7 +347,7 @@ namespace Calculadora
             // 
             this.butdividido1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butdividido1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butdividido1.ForeColor = System.Drawing.SystemColors.Control;
+            this.butdividido1.ForeColor = System.Drawing.Color.Aqua;
             this.butdividido1.Location = new System.Drawing.Point(12, 133);
             this.butdividido1.Name = "butdividido1";
             this.butdividido1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -362,7 +362,7 @@ namespace Calculadora
             // 
             this.butborrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butborrar.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butborrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.butborrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.butborrar.Location = new System.Drawing.Point(223, 80);
             this.butborrar.Name = "butborrar";
             this.butborrar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 12);
@@ -378,7 +378,7 @@ namespace Calculadora
             // 
             this.butC.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butC.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butC.ForeColor = System.Drawing.SystemColors.Control;
+            this.butC.ForeColor = System.Drawing.Color.Lime;
             this.butC.Location = new System.Drawing.Point(152, 80);
             this.butC.Name = "butC";
             this.butC.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -393,7 +393,7 @@ namespace Calculadora
             // 
             this.butCE.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butCE.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butCE.ForeColor = System.Drawing.SystemColors.Control;
+            this.butCE.ForeColor = System.Drawing.Color.Lime;
             this.butCE.Location = new System.Drawing.Point(84, 80);
             this.butCE.Name = "butCE";
             this.butCE.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -408,7 +408,7 @@ namespace Calculadora
             // 
             this.butporciento.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butporciento.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.butporciento.ForeColor = System.Drawing.SystemColors.Control;
+            this.butporciento.ForeColor = System.Drawing.Color.Aqua;
             this.butporciento.Location = new System.Drawing.Point(13, 80);
             this.butporciento.Name = "butporciento";
             this.butporciento.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
