@@ -149,33 +149,40 @@ namespace Calculadora
 
         private void butigual_Click(object sender, EventArgs e)
         {
-            
-            segundo = double.Parse(Pantallapri.Text);
-            double Sum, Res, Mul, Div;
-
-            switch (operador)
+            try
             {
-                case "+":
-                    Sum = for1.Suma((primero), (segundo));
-                    Pantallapri.Text = Sum.ToString();
-                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
-                    break;
-                case "-":
-                    Res = for2.Restar((primero), (segundo));
-                    Pantallapri.Text = Res.ToString();
-                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
-                    break;
-                case "x":
-                    Mul = for3.Multiplicar((primero), (segundo));
-                    Pantallapri.Text = Mul.ToString();
-                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
-                    break;
-                case "÷":
-                    Div = for4.Divicion((primero), (segundo));
-                    Pantallapri.Text = Div.ToString();
-                    Pantallaant.Text = Pantallaant.Text + segundo + "=";
-                    break;
+                segundo = double.Parse(Pantallapri.Text);
+                double Sum, Res, Mul, Div;
+
+                switch (operador)
+                {
+                    case "+":
+                        Sum = for1.Suma((primero), (segundo));
+                        Pantallapri.Text = Sum.ToString();
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                        break;
+                    case "-":
+                        Res = for2.Restar((primero), (segundo));
+                        Pantallapri.Text = Res.ToString();
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                        break;
+                    case "x":
+                        Mul = for3.Multiplicar((primero), (segundo));
+                        Pantallapri.Text = Mul.ToString();
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                        break;
+                    case "÷":
+                        Div = for4.Divicion((primero), (segundo));
+                        Pantallapri.Text = Div.ToString();
+                        Pantallaant.Text = Pantallaant.Text + segundo + "=";
+                        break;
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         private void butC_Click(object sender, EventArgs e)
@@ -205,17 +212,33 @@ namespace Calculadora
 
         private void butborrar_Click(object sender, EventArgs e)
         {
-            if (Pantallapri.Text.Length > 0)
+            try
             {
-                Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1);
+                if (Pantallapri.Text.Length > 0)
+                {
+                    Pantallapri.Text = Pantallapri.Text.Remove(Pantallapri.Text.Length - 1);
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         private void butnegativo_Click(object sender, EventArgs e)
         {
-            primero = Convert.ToInt32(Pantallapri.Text);
-            primero *= -1;
-            Pantallapri.Text = primero.ToString();
+            try
+            {
+                primero = Convert.ToInt32(Pantallapri.Text);
+                primero *= -1;
+                Pantallapri.Text = primero.ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         private void butcuadrado_Click(object sender, EventArgs e)
