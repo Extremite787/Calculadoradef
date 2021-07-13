@@ -10,7 +10,7 @@ namespace Calculadora
         {
             double P;
             P = num1 * num2;
-            P = P / 100;
+            P /= 100;
             return P;
         }
     }

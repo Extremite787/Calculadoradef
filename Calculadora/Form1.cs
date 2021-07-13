@@ -169,26 +169,42 @@ namespace Calculadora
         private void butnegativo_Click(object sender, EventArgs e)
         {
             primero = Convert.ToInt32(Pantallapri.Text);
-            primero = primero * -1;
+            primero *= -1;
             Pantallapri.Text = primero.ToString();
         }
 
         private void butcuadrado_Click(object sender, EventArgs e)
         {
-            operador = "²";
-            primero = Convert.ToInt32(Pantallapri.Text);
-            Pantallaant.Text = Pantallapri.Text + "²";
-            primero = primero * primero;
-            Pantallapri.Text = primero.ToString();
+            try
+            {
+                operador = "²";
+                primero = Convert.ToInt32(Pantallapri.Text);
+                Pantallaant.Text = Pantallapri.Text + "²" + "=";
+                primero = primero * primero;
+                Pantallapri.Text = primero.ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
         private void butdividido1_Click(object sender, EventArgs e)
         {
-            operador = "1/";
-            primero = Convert.ToInt32(Pantallapri.Text);
-            Pantallaant.Text = "1/" + Pantallapri.Text;
-            primero = 1 / primero;
-            Pantallapri.Text = primero.ToString();
+            try
+            {
+                operador = "1/";
+                primero = Convert.ToInt32(Pantallapri.Text);
+                Pantallaant.Text = "1/" + Pantallapri.Text + "=";
+                primero = 1 / primero;
+                Pantallapri.Text = primero.ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
         private void butraizcuadrado_Click(object sender, EventArgs e)
