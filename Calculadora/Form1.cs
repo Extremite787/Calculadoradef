@@ -209,13 +209,19 @@ namespace Calculadora
 
         private void butraizcuadrado_Click(object sender, EventArgs e)
         {
-            operador = "²√";
-            primero = Convert.ToInt32(Pantallapri.Text);
-            Pantallaant.Text = "²√" + Pantallapri.Text;
-
-            double Resultado, num = primero;
-            Resultado = Math.Sqrt(num);
-            Pantallapri.Text = Resultado.ToString();
+            try
+            {
+                operador = "²√";
+                primero = Convert.ToInt32(Pantallapri.Text);
+                Pantallaant.Text = "²√" + Pantallapri.Text;
+                double Resultado, num = primero;
+                Resultado = Math.Sqrt(num);
+                Pantallapri.Text = Resultado.ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void butporciento_Click(object sender, EventArgs e)
