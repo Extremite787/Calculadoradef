@@ -77,34 +77,65 @@ namespace Calculadora
 
         private void butsuma_Click(object sender, EventArgs e)
         {
-            operador = "+";
-            primero = double.Parse(Pantallapri.Text);
-            Pantallaant.Text = Pantallapri.Text + "+";
-            Pantallapri.Clear();
+            
+            try
+            {
+                operador = "+";
+                primero = double.Parse(Pantallapri.Text);
+                Pantallaant.Text = Pantallapri.Text + "+";
+                Pantallapri.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void butresta_Click(object sender, EventArgs e)
         {
-            operador = "-";
-            primero = double.Parse(Pantallapri.Text);
-            Pantallaant.Text = Pantallapri.Text + "-";
-            Pantallapri.Clear();
+            try
+            {
+                operador = "-";
+                primero = double.Parse(Pantallapri.Text);
+                Pantallaant.Text = Pantallapri.Text + "-";
+                Pantallapri.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
         private void butmultiplicar_Click(object sender, EventArgs e)
         {
-            operador = "x";
-            primero = double.Parse(Pantallapri.Text);
-            Pantallaant.Text = Pantallapri.Text + "x";
-            Pantallapri.Clear();
+            try
+            {
+                operador = "x";
+                primero = double.Parse(Pantallapri.Text);
+                Pantallaant.Text = Pantallapri.Text + "x";
+                Pantallapri.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         private void butdividir_Click(object sender, EventArgs e)
         {
-            operador = "÷";
-            primero = double.Parse(Pantallapri.Text);
-            Pantallaant.Text = Pantallapri.Text + "÷";
-            Pantallapri.Clear();
+            try
+            {
+                operador = "÷";
+                primero = double.Parse(Pantallapri.Text);
+                Pantallaant.Text = Pantallapri.Text + "÷";
+                Pantallapri.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void butcoma_Click(object sender, EventArgs e)
@@ -149,13 +180,27 @@ namespace Calculadora
 
         private void butC_Click(object sender, EventArgs e)
         {
-            Pantallapri.Clear();
-            Pantallaant.Clear();
+            try
+            {
+                Pantallapri.Clear();
+                Pantallaant.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void butCE_Click(object sender, EventArgs e)
         {
-            Pantallapri.Clear();
+            try
+            {
+                Pantallapri.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void butborrar_Click(object sender, EventArgs e)
